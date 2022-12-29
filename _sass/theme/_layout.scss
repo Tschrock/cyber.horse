@@ -1,0 +1,62 @@
+.site-header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding: 0.5rem 1rem;
+    @extend .no-decoration;
+}
+
+.site-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    @extend .no-decoration;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.page-content {
+    flex-grow: 1;
+    padding: 0.5rem 2rem 1.5rem;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.social-link {
+    padding: 1rem;
+    @extend .no-decoration;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .site-header {
+        flex-direction: column;
+    }
+
+    .page-content {
+        flex-grow: 1;
+        padding: 1.5rem 1rem;
+    }
+}
+
+.page-section {
+    margin-bottom: 4rem;
+}

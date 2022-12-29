@@ -1,0 +1,21 @@
+$coat-color: hsl(216, 74%, 52%);
+$mane-color: hsl(10, 66%, 48%);
+
+$black: hsl(0, 0%, 0%);
+$dark-05: hsl(0, 0%, 5%);
+$dark-10: hsl(0, 0%, 10%);
+$dark-20: hsl(0, 0%, 20%);
+
+$white: hsl(0, 0%, 100%);
+$light-95: hsl(0, 0%, 95%);
+$light-90: hsl(0, 0%, 90%);
+$light-85: hsl(0, 0%, 85%);
+$light-80: hsl(0, 0%, 80%);
+
+$breakpoint-mobile: 600px;
+$breakpoint-laptop: 800px;
+
+@import "theme/util";
+@import "theme/base";
+@import "theme/layout";
+@import "theme/components";

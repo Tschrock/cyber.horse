@@ -1,0 +1,10 @@
+<div class="interjection">
+    {% if include.icon %}
+        <img class="interjection-image" src="/assets/interjections/{{ include.icon }}.png" />
+    {% else if include.src %}
+        <img class="interjection-image" src="{{ include.src }}" />
+    {% endif %}
+    <div class="interjection-content">
+        {{ include.content | markdownify }}
+    </div>
+</div>

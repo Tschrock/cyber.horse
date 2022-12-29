@@ -1,0 +1,4 @@
+<a class="project" href="{{ include.link | escape }}">
+    <div class="project-title">{{ include.title }}</div>
+    <div class="project-tagline">{{ include.tagline }}</div>
+</a>

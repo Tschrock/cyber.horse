@@ -1,0 +1,13 @@
+<footer class="site-footer">
+    <div>
+        {{ site.description }}
+    </div>
+    <div>
+        {%- for link in site.social_links %}
+            <a class="social-link" href="{{ link.url | escape }}" target="_blank" title="{{ link.name | escape }}">
+                {% capture class %}{{ link.icon }} fa-lg{% endcapture %}
+                {% include icon class=class %}
+            </a>
+        {%- endfor %}
+    </div>
+</footer>

@@ -1,0 +1,19 @@
+title: Cyber Horse
+author: Tyler Schrock
+email: blog@cyber.horse
+description: The ramblings of an internet horse.
+
+baseurl: ""
+url: cyber.horse
+permalink: /blog/:title:output_ext
+markdown: CommonMarkGhPages
+
+social_links:
+- name: GitHub
+  icon: fa-brands fa-github
+  url: https://github.com/tschrock
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name

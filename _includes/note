@@ -1,0 +1,7 @@
+<div class="note">
+    {% capture class %}{{ include.icon }} note-image{% endcapture %}
+    {% include icon src=include.src class=class %}
+    <div class="note-content">
+        {{ include.content | markdownify }}
+    </div>
+</div>

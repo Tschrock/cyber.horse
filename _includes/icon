@@ -1,0 +1,10 @@
+{% if include.src %}
+    <img class="icon {{ include.class }}" src="{{ include.src }}"/>
+{% else if include.class %}
+    {% assign starts = include.class | slice: 0, 2 %}
+    {% if starts == "fa" %}
+        <i class="icon {{ include.class }}"></i>
+    {% else %}
+        <i class="icon fa-solid fa-{{ include.class }}"></i>
+    {% endif %}
+{% endif %}

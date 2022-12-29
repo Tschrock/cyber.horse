@@ -1,0 +1,31 @@
+.project-list {
+    display: flex;
+    gap: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project {
+    @extend .no-decoration;
+    padding: 1em;
+    border: solid 1px hsl(0, 0%, 40%);
+
+    border-radius: 0.5em;
+}
+
+.project-title {
+    font-size: 1.25em;
+}
+
+.project-tagline {
+    color: $dark-20;
+}
+
+.img-small {
+    max-width: 200px;
+}
+
+.float-left { 
+    float: left;
+    margin-right: 2rem;
+}
